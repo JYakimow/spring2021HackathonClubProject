@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+#testn to see if github works
+
 #constants defined
 const UP = Vector2(0, -1)
 const GRAVITY = 20
