@@ -24,6 +24,7 @@ func _physics_process(delta):
 		motion.x = 0;
 	
 	if is_on_floor():
+		motion.y = 0
 		if Input.is_action_just_pressed("ui_up"):
 			motion.y = JUMP_HEIGHT
 	
