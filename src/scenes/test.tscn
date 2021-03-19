@@ -14,7 +14,7 @@ extents = Vector2( 32.0923, 32.1837 )
 [node name="Template Scene" type="Node"]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 480, 224 )
+position = Vector2( 608, 224 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -102,6 +102,30 @@ texture = ExtResource( 4 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall9"]
 shape = SubResource( 2 )
 
+[node name="wall10" type="StaticBody2D" parent="."]
+position = Vector2( 160, 160 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="wall10"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall10"]
+shape = SubResource( 2 )
+
+[node name="wall11" type="StaticBody2D" parent="."]
+position = Vector2( 96, 160 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="wall11"]
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall11"]
+shape = SubResource( 2 )
+
 [node name="wall3" type="StaticBody2D" parent="."]
 position = Vector2( 480, 416 )
 __meta__ = {
@@ -140,6 +164,7 @@ shape = SubResource( 2 )
 
 [node name="Background" type="TextureRect" parent="."]
 visible = false
+show_behind_parent = true
 margin_right = 1920.0
 margin_bottom = 1080.0
 rect_pivot_offset = Vector2( 360, 400 )
