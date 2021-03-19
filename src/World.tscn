@@ -33,7 +33,6 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="wall"]
-position = Vector2( 176, -312 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
@@ -172,6 +171,7 @@ texture = ExtResource( 3 )
 shape = SubResource( 2 )
 
 [node name="Background" type="TextureRect" parent="."]
+visible = false
 show_behind_parent = true
 margin_right = 1920.0
 margin_bottom = 1080.0
