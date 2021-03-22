@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DirtAngleTopLeft.png-24558755a76e3bf4e8bc742039ebb08e.stex"
+path="res://.import/HalfGrassAngleLowerLeft.png-aaa0268768cbbe6f579a7dc32c8163ba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Resized Assets/DirtAngleTopLeft.png"
-dest_files=[ "res://.import/DirtAngleTopLeft.png-24558755a76e3bf4e8bc742039ebb08e.stex" ]
+source_file="res://assets/Resized Assets/Resized Tiles/HalfGrassAngleLowerLeft.png"
+dest_files=[ "res://.import/HalfGrassAngleLowerLeft.png-aaa0268768cbbe6f579a7dc32c8163ba.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dirt.jpeg-e74475c9b0d25bc7a62522c4bd8cea3e.stex"
+path="res://.import/GrassAngleLowerRight.jpeg-4c018cbb94bc493bb656f7f9e200e78f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Resized Assets/Dirt.jpeg"
-dest_files=[ "res://.import/Dirt.jpeg-e74475c9b0d25bc7a62522c4bd8cea3e.stex" ]
+source_file="res://assets/Resized Assets/Resized Tiles/GrassAngleLowerRight.jpeg"
+dest_files=[ "res://.import/GrassAngleLowerRight.jpeg-4c018cbb94bc493bb656f7f9e200e78f.stex" ]
 
 [params]
 
