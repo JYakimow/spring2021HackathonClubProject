@@ -1,10 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://src/KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://assets/Grass.png" type="Texture" id=3]
 [ext_resource path="res://assets/Background.png" type="Texture" id=4]
 [ext_resource path="res://assets/Resized Assets/Dirt.jpeg" type="Texture" id=5]
+[ext_resource path="res://assets/Resized Assets/DirtAngleTopLeft.png" type="Texture" id=6]
+[ext_resource path="res://assets/Resized Assets/GrassAngleLowerLeft.jpeg" type="Texture" id=7]
+[ext_resource path="res://assets/Resized Assets/HalfGrassAngleLowerLeft.png" type="Texture" id=8]
+[ext_resource path="res://assets/Resized Assets/GrassAngleLowerRight.jpeg" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.8775, 32.0445 )
@@ -12,8 +16,37 @@ extents = Vector2( 31.8775, 32.0445 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 32.0923, 32.1837 )
 
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( 30.9006, -32.6454 )
+b = Vector2( -32.4446, 30.9707 )
+
+[sub_resource type="SegmentShape2D" id=5]
+b = Vector2( -0.0149612, 61.7563 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( -4.25281, 1.49937 )
+b = Vector2( 56.9312, 1.49937 )
+
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 31.95, 32.056 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 31.9648, 32.0864 )
+
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( -30.8359, -28.3871 )
+b = Vector2( 28.8543, 30.8577 )
+
+[sub_resource type="SegmentShape2D" id=10]
+a = Vector2( 0.0416622, -3.04666 )
+b = Vector2( -0.0128746, 57.9186 )
+
+[sub_resource type="SegmentShape2D" id=11]
+a = Vector2( 40.8554, 10.5282 )
+b = Vector2( -20.471, 10.5116 )
 
 [node name="world_template" type="Node"]
 
@@ -174,6 +207,81 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall10"]
 shape = SubResource( 2 )
 
+[node name="HalfDirt" type="StaticBody2D" parent="."]
+position = Vector2( 736.119, 352.167 )
+rotation = 3.13553
+scale = Vector2( 1, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="HalfDirt"]
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HalfDirt"]
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="HalfDirt"]
+position = Vector2( -30.592, -32.0488 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="HalfDirt"]
+position = Vector2( -27.8109, -32.0488 )
+shape = SubResource( 6 )
+
+[node name="Dirt" type="StaticBody2D" parent="."]
+position = Vector2( 544, 352 )
+
+[node name="Sprite" type="Sprite" parent="Dirt"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt"]
+shape = SubResource( 3 )
+
+[node name="GrassAngleRight" type="StaticBody2D" parent="."]
+position = Vector2( 799.658, 351.944 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="GrassAngleRight"]
+texture = ExtResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrassAngleRight"]
+shape = SubResource( 7 )
+
+[node name="GrassAngleLeft" type="StaticBody2D" parent="."]
+position = Vector2( 289.107, 416.358 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="GrassAngleLeft"]
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrassAngleLeft"]
+shape = SubResource( 8 )
+
+[node name="GrassAngle" type="StaticBody2D" parent="."]
+position = Vector2( 289.246, 353.468 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="GrassAngle"]
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrassAngle"]
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="GrassAngle"]
+position = Vector2( -30.5133, -25.9474 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="GrassAngle"]
+position = Vector2( -11.6543, 20.0012 )
+shape = SubResource( 11 )
+
 [node name="Background" type="TextureRect" parent="."]
 visible = false
 show_behind_parent = true
@@ -184,12 +292,3 @@ texture = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Dirt" type="StaticBody2D" parent="."]
-position = Vector2( 544, 352 )
-
-[node name="Sprite" type="Sprite" parent="Dirt"]
-texture = ExtResource( 5 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Dirt"]
-shape = SubResource( 3 )

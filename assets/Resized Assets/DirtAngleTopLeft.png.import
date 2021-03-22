@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DirtAngleTopRight.jpeg-1196cc84f74dd1bb7783c1da62f86e74.stex"
+path="res://.import/DirtAngleTopLeft.png-24558755a76e3bf4e8bc742039ebb08e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Resized Assets/DirtAngleTopRight.jpeg"
-dest_files=[ "res://.import/DirtAngleTopRight.jpeg-1196cc84f74dd1bb7783c1da62f86e74.stex" ]
+source_file="res://assets/Resized Assets/DirtAngleTopLeft.png"
+dest_files=[ "res://.import/DirtAngleTopLeft.png-24558755a76e3bf4e8bc742039ebb08e.stex" ]
 
 [params]
 

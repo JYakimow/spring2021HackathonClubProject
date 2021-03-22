@@ -16,9 +16,6 @@ extents = Vector2( 32.0923, 32.1837 )
 [node name="Player" type="KinematicBody2D" parent="."]
 position = Vector2( 480, 224 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Player"]
 texture = ExtResource( 2 )
@@ -28,9 +25,6 @@ shape = SubResource( 1 )
 
 [node name="wall" type="StaticBody2D" parent="."]
 position = Vector2( 544, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall"]
 texture = ExtResource( 3 )
@@ -40,9 +34,6 @@ shape = SubResource( 2 )
 
 [node name="wall2" type="StaticBody2D" parent="."]
 position = Vector2( 608, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall2"]
 texture = ExtResource( 3 )
@@ -52,9 +43,6 @@ shape = SubResource( 2 )
 
 [node name="wall4" type="StaticBody2D" parent="."]
 position = Vector2( 672, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall4"]
 texture = ExtResource( 3 )
@@ -64,9 +52,6 @@ shape = SubResource( 2 )
 
 [node name="wall5" type="StaticBody2D" parent="."]
 position = Vector2( 736, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall5"]
 texture = ExtResource( 3 )
@@ -76,9 +61,6 @@ shape = SubResource( 2 )
 
 [node name="wall11" type="StaticBody2D" parent="."]
 position = Vector2( 800, 224 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall11"]
 texture = ExtResource( 3 )
@@ -88,9 +70,6 @@ shape = SubResource( 2 )
 
 [node name="wall12" type="StaticBody2D" parent="."]
 position = Vector2( 864, 224 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall12"]
 texture = ExtResource( 3 )
@@ -100,9 +79,6 @@ shape = SubResource( 2 )
 
 [node name="wall3" type="StaticBody2D" parent="."]
 position = Vector2( 480, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall3"]
 texture = ExtResource( 3 )
@@ -112,9 +88,6 @@ shape = SubResource( 2 )
 
 [node name="wall6" type="StaticBody2D" parent="."]
 position = Vector2( 416, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall6"]
 texture = ExtResource( 3 )
@@ -124,9 +97,6 @@ shape = SubResource( 2 )
 
 [node name="wall7" type="StaticBody2D" parent="."]
 position = Vector2( 352, 416 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall7"]
 texture = ExtResource( 3 )
@@ -136,9 +106,6 @@ shape = SubResource( 2 )
 
 [node name="wall8" type="StaticBody2D" parent="."]
 position = Vector2( 224, 288 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall8"]
 texture = ExtResource( 3 )
@@ -148,9 +115,6 @@ shape = SubResource( 2 )
 
 [node name="wall10" type="StaticBody2D" parent="."]
 position = Vector2( 96, 288 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="wall10"]
 texture = ExtResource( 3 )
